@@ -1,0 +1,23 @@
+{
+  "name": "react-native-shortcut-badge",
+  "description": "Badge for the shortcut icon in your React Native Android Apps",
+  "version": "0.1.0-beta.1",
+  "main": "index.js",
+  "private": true,
+  "author": "aMarCruz",
+  "scripts": {
+    "test": "echo No test!"
+  },
+  "homepage": "https://github.com/aMarCruz/react-native-shortcut-badge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aMarCruz/react-native-shortcut-badge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aMarCruz/react-native-shortcut-badge/issues"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.50.0"
+  },
+  "dependencies": {}
+}
