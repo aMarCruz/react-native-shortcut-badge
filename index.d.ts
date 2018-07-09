@@ -1,15 +1,15 @@
 declare module "react-native-shortcut-badge" {
 
     interface ShortcutBadgeStatic {
-        /** Launcher name, null if unknown */
+        /**
+         * Launcher home name, null if unknown
+         */
         readonly launcher: string | null;
-        /** If the launcher supported? */
-        readonly supported: boolean;
 
         /**
-         * Disable badges in Android O and above.
+         * If the launcher supported?
          */
-        disableInOreo(on: boolean): void;
+        readonly supported: boolean;
 
         /**
          * Set the badge count. Use 0 to remove it.
@@ -19,7 +19,12 @@ declare module "react-native-shortcut-badge" {
         /**
          * Get the badge count.
          */
-        getCount(): number;
+        getCount(): Promise<number>;
+
+        /**
+         * Reads the counter from the storage
+         */
+        requestPermission(): Promise<void>;
     }
 
     const ShortcutBadge: ShortcutBadgeStatic;

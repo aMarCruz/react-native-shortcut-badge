@@ -1,13 +1,23 @@
+import { PushNotificationIOS, Settings } from 'react-native'
+
 export default {
   launcher: null,
-  supported: false,
+  supported: true,
 
-  disableInOreo () {
+  setCount (count) {
+    // check permission here?
+    PushNotificationIOS.setApplicationIconBadgeNumber(count)
+    return Promise.resolve(true)
   },
-  setCount () {
-    return Promise.resolve(false)
-  },
+
   getCount () {
-    return 0
+    return new Promise((resolve) => {
+      PushNotificationIOS.getApplicationIconBadgeNumber(resolve)
+    })
   },
+
+  requestPermission () {
+    return PushNotificationIOS.requestPermissions({ badge: true })
+      .then((permissions) => permissions.badge)
+  }
 }
