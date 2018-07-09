@@ -28,8 +28,9 @@ See https://github.com/leolin310148/ShortcutBadger/issues/46
 ```js
 import ShortcutBadge from 'react-native-shortcut-badge';
 
-const count = ShortcutBadge.getCount();
-ShortcutBadge.setCount(count + 1);
+ShortcutBadge.getCount((count) => {
+    ShortcutBadge.setCount(count + 1);
+});
 ```
 
 ### Properties

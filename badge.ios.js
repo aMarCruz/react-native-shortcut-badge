@@ -1,4 +1,4 @@
-import { PushNotificationIOS, Settings } from 'react-native'
+import { PushNotificationIOS } from 'react-native'
 
 export default {
   launcher: null,
