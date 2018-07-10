@@ -1,12 +1,14 @@
 # react-native-shortcut-badge
 
-Badge for the shortcut icon in your React Native Android Apps.
+Badge for the shortcut icon in your React Native App (Android & iOS).
 
-Wrapper for the amazing [ShortcutBadger](https://github.com/leolin310148/ShortcutBadger) library.
+iOS have native support for badges and this library uses the React Native [PushNotificationIOS](https://facebook.github.io/react-native/docs/pushnotificationios) module.
+
+In Android, this is a wrapper for the amazing [ShortcutBadger](https://github.com/leolin310148/ShortcutBadger) library.
+
+ShortcutBadger is included in many notification libraries for React Native, rn-shortcut-badge offers an API and updates that do not depend on any of these libraries, although it can present the same drawbacks (before Android 8 there is no native support for badges, in Android 8 and later the badge is defined by the notifications).
 
 **NOTE**: This is Work In Progress, not fully tested.
-
-ShortcutBadger is included in many notification libraries for React Native, this library offers an API and updates that do not depend on any of these libraries.
 
 ## Setup
 
