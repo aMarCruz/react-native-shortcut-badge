@@ -1,4 +1,4 @@
-import { PushNotificationIOS } from '@react-native-community/push-notification-ios'
+import PushNotificationIOS from '@react-native-community/push-notification-ios'
 
 export default {
   launcher: null,
