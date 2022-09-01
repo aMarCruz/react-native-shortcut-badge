@@ -2,6 +2,10 @@
 
 Badge for the shortcut icon in your React Native App (Android & iOS).
 
+In my country (México), software developers are poorly paid, so I have had to look for another job to earn a living and I cannot dedicate more time to maintaining this and other repositories that over the years have never generated any money for me. If anyone is interested in maintaining this repository, I'd be happy to transfer it to them, along with the associated npm package. |
+:---: |
+En mi país (México), los desarrolladores de software somos pésimamente pagados, por lo que he tenido que buscar otro trabajo para ganarme la vida y no puedo dedicar más tiempo a mantener éste y otros repositorios que a través de los años nunca me generaron dinero. Si a alguien le interesa dar mantenimiento a este repositorio, con gusto se lo transferiré, así como el paquete de npm asociado. |
+
 iOS have native support for badges and this library uses the React Native [PushNotificationIOS](https://facebook.github.io/react-native/docs/pushnotificationios) module.
 
 In Android, this is a wrapper for the amazing [ShortcutBadger](https://github.com/leolin310148/ShortcutBadger) library.
